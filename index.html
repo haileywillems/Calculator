@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Expence Tracker</h1>
+    <div class="container">
+            <input name="expenseName" id="expenseInput" placeholder="Expense Name">
+            <input name="amount" id="amountInput" placeholder="Amount">
+            <select name="catagory" id="categoryinput">
+                <option value="">Select a category</option>
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="addExpense()" class="add-btn">Add</button>
+        <div class="expense-table">
+            <table id="table">
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Catagory</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+        </div>
+        <div id="total">Total: $0</div>
+    </div>
+</body>
+</html>
